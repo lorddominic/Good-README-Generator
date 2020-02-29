@@ -1,10 +1,9 @@
-function generateMarkdown(data, profile, email, name) {
-    return `   
+   
  # My bio 
- ${name}
+ Boyan Xu
  ## Bio Image
- ![GitHub-med](${profile}) 
- ![GitHub license](https://img.shields.io/badge/license-${data.license}-blue.svg)
+ ![GitHub-med](https://avatars1.githubusercontent.com/u/46208528?v=4) 
+ ![GitHub license](https://img.shields.io/badge/license-Apache 2.0-blue.svg)
  
  
  ## Table of Contents:
@@ -18,21 +17,17 @@ function generateMarkdown(data, profile, email, name) {
  - [Questions](#Questions)
  
  ## Project Name:
- ${data.title}
+ CodeQuiz
 
  ## Description
- ${data.description}
+ it's good 
  ## Test: 
- \`${data.Tests}\`
+ `undefined`
  ## Install Dependencies
- ${data.Installation}
+ undefined
  ## Email 
- ${email}
+ dominictxu1@gmail.com
  ## Usage
- ${data.usage}
+ homework 
  ## Questions
- ${data.Questions} 
-`;
-}
-
-module.exports = generateMarkdown;
+ undefined 

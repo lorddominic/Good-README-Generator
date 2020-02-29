@@ -2,7 +2,7 @@ const fs = require("fs");
 const axios = require("axios");
 const inquirer = require("inquirer");
 const markdown = require("./utils/generateMarkdown");
-const user = require("./utils/api");
+
 
 inquirer
     .prompt([{
@@ -11,12 +11,33 @@ inquirer
         },
         {
             type: "input",
-            message: "What is your project title?",
+            message: "What is your project's name?",
             name: "title"
         },
         {
+            type: "list",
+            message: "Which license do you want to see?",
+            name: "license",
+            choices: [
+                "repo size",
+                "MIT",
+                "Apache 2.0",
+                "None"
+            ]
+        },
+        {
             type: "input",
-            message: "What is the description?",
+            name: "test",
+            message: "What command should be run to run tests?"
+        },
+        {
+            type: "input",
+            name: "dependencies",
+            message: "What command should be run to install dependencies?"
+        },
+        {
+            type: "input",
+            message: "Write a description of your project?",
             name: "description"
         },
         {
@@ -26,35 +47,21 @@ inquirer
         },
         {
             type: "input",
-            message: "Installation",
-            name: "Installation"
-        },
-        {
-            type: "input",
-            message: "License",
-            name: "License"
-        },
-        {
-            type: "input",
-            message: "Tests",
-            name: "Tests"
-        },
-        {
-            type: "input",
-            message: "Questions",
-            name: "Questions"
+            name: "questions",
+            message: "Any other questions? Let me know."
         }
+
     ])
     .then(function(response) {
         const queryUrl = `https://api.github.com/users/${response.username}`;
         axios.get(queryUrl).then(function(res) {
             console.log(res);
             var profile = res.data.avatar_url;
-            var email = res.data.email || "no email";
+            var email = res.data.email || "dominictxu1@gmail.com";
             var name = res.data.name;
             console.log(profile);
             console.log(email);
-            fs.writeFile("README.md", markdown(response, profile, email, name), function(err) {
+            fs.writeFile("GenerateREADME.md", markdown(response, profile, email, name), function(err) {
                 if (err) {
                     return console.log(err);
                 }
