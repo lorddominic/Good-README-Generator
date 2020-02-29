@@ -3,7 +3,7 @@ function generateMarkdown(data, profile, email, name) {
  # My bio 
  ${name}
  ## Bio Image
- ![GitHub-med](${profile}) 
+ ![gitHub-med](${profile}) 
  ![GitHub license](https://img.shields.io/badge/license-${data.license}-blue.svg)
  ## Project Name:
  ${data.title}
@@ -31,7 +31,7 @@ function generateMarkdown(data, profile, email, name) {
  ${data.usage}
  ## Questions:
  ${data.questions} 
- ![Example 1 GIF](./assets/images/example1.gif/)
+
 `;
 }
 

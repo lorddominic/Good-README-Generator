@@ -2,10 +2,10 @@
  # My bio 
  Boyan Xu
  ## Bio Image
- ![GitHub-med](https://avatars1.githubusercontent.com/u/46208528?v=4) 
- ![GitHub license](https://img.shields.io/badge/license-BSD3-blue.svg)
+ ![gitHub-med](https://avatars1.githubusercontent.com/u/46208528?v=4) 
+ ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
  ## Project Name:
- CodeQuiz
+ eggplant
  
  ## Table of Contents:
  - [Description](#Description)
@@ -17,16 +17,17 @@
  - [Questions](#Questions)
  
  ## Description:
- a
+ it's cool
  ## Test: 
- `a`
+ `eat eggplant`
  ## Install Dependencies:
- `a`
+ `plant eggplant`
  ## Repository: 
- a
+ but eggplant
  ## Email:
  dominictxu1@gmail.com
  ## Usage:
- a
+ cook eggplant
  ## Questions:
- a 
+ how much is chinese eggplant 
+

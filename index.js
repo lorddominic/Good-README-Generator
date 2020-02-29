@@ -21,7 +21,6 @@ inquirer
             choices: [
                 "BSD3",
                 "MIT",
-                "Apache 2.0",
                 "None"
             ]
         },
