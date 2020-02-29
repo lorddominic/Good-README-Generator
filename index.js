@@ -19,7 +19,7 @@ inquirer
             message: "Which license do you want to see?",
             name: "license",
             choices: [
-                "repo size",
+                "BSD3",
                 "MIT",
                 "Apache 2.0",
                 "None"
@@ -34,6 +34,11 @@ inquirer
             type: "input",
             name: "dependencies",
             message: "What command should be run to install dependencies?"
+        },
+        {
+            type: "input",
+            name: "repo",
+            message: "What does the user need to do with the repo?"
         },
         {
             type: "input",

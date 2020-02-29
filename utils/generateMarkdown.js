@@ -5,33 +5,33 @@ function generateMarkdown(data, profile, email, name) {
  ## Bio Image
  ![GitHub-med](${profile}) 
  ![GitHub license](https://img.shields.io/badge/license-${data.license}-blue.svg)
- 
+ ## Project Name:
+ ${data.title}
  
  ## Table of Contents:
- - [Project-name](#Project-name)
  - [Description](#Description)
  - [Test](#Test)
  - [Install-Dependencies](#Install-Dependencies)
+ - [Repository](#Repository)
  - [Email](#Email)
- 
  - [Usage](#Usage)
  - [Questions](#Questions)
  
- ## Project Name:
- ${data.title}
-
- ## Description
+ ## Description:
  ${data.description}
  ## Test: 
- \`${data.Tests}\`
- ## Install Dependencies
- ${data.Installation}
- ## Email 
+ \`${data.test}\`
+ ## Install Dependencies:
+ \`${data.dependencies}\`
+ ## Repository: 
+ ${data.repo}
+ ## Email:
  ${email}
- ## Usage
+ ## Usage:
  ${data.usage}
- ## Questions
- ${data.Questions} 
+ ## Questions:
+ ${data.questions} 
+ ![Example 1 GIF](./assets/images/example1.gif/)
 `;
 }
 
