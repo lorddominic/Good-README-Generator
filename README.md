@@ -1,11 +1,5 @@
 # Good-README-Generator
 
-## Table of Contents:
--[Description](Description)
--[Contact](Contact)
--[Link](Link)
--[Gif](Gif)
-
 ## Description
 This readme generator is a perfect practice for us to deeply know how npm works in node.js. We use a couple of libraries like axios,fs and inquirer. The hard part of this project is to make sure the keywords in markdown are the same as they are in the inquirer. It definitely need us being careful on the keywords part.
 
